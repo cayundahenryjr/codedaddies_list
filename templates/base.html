@@ -1,10 +1,48 @@
+{% load staticfiles %}
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Codedaddies_list</title>
+    <link rel="stylesheet" href="{% static "css/style.css" %}">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
 </head>
 <body>
-<h2>Testing to see if this</h2>
+    <nav>
+        <div class="container nav-wrapper">
+            <a href="/" class="brand-logo">Codedaddies List</a>
+            <ul id="nav-mobile" class="right">
+                <li><a href="/">Home</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+        <h1 class="center-align">What do you want to search for on Codedaddies List?</h1>
+        <div class="col s4">
+            <div class="center">
+                <i class="large material-icons red-text text-accent-1">flash_on</i>
+                <p>Fast craigslist web scraper</p>
+                <p class="light center">Scrape away right here with a beautiful GUI.</p>
+            </div>
+        </div>
+
+        <div class="col s4">
+            <div class="center">
+                <i class="large material-icons red-text text-accent-1">camera</i>
+                <p>Filter your searches</p>
+                <p class="light center">We built in functionality to filter based on pricing</p>
+            </div>
+        </div>
+        </div>
+    </div>
+
 </body>
 </html>
